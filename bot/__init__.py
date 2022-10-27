@@ -425,7 +425,7 @@ try:
         raise KeyError
     TOTAL_TASKS_LIMIT = int(TOTAL_TASKS_LIMIT)
 except KeyError:
-    TOTAL_TASKS_LIMIT = None
+    TOTAL_TASKS_LIMIT = 6
 try:
     USER_TASKS_LIMIT = getConfig('USER_TASKS_LIMIT')
     if len(USER_TASKS_LIMIT) == 0:
